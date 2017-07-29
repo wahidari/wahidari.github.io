@@ -224,10 +224,6 @@
 			opacity: 0.75;
 		}
 
-		#header nav {
-			margin: 1.5em 0 0 0;
-		}
-
 			#header nav li {
 				-moz-animation: nav-icons 0.5s ease-in-out forwards;
 				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
