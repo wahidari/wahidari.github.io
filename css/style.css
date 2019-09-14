@@ -228,6 +228,21 @@
 			opacity: 0.75;
 		}
 
+		#header p.link a {
+			border: 1px dashed rgba(255, 255, 255, 0.5);
+			padding-bottom: 2px;
+    	    padding-left: 4px;
+    		padding-right: 4px;
+    		border-radius: 8px;
+		}
+
+		#header p.link a:hover {
+			border: 1px solid rgba(255, 255, 255, 1);
+			padding-bottom: 2px;
+    		padding-left: 2px;
+    		padding-right: 2px;
+		}
+
 			#header nav li {
 				-moz-animation: nav-icons 0.5s ease-in-out forwards;
 				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
