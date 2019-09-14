@@ -41,7 +41,12 @@
 
 	#header p {
 		font-size: 1.3em;
-		margin-top: 2%;
+		margin-top: 3%;
+	}
+
+	#header nav.custom{
+		margin-bottom: -83px;
+    	margin-top: -11px;
 	}
 
 	#header nav {

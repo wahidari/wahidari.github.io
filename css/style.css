@@ -19,7 +19,8 @@
 	.img-circle {
     	border-radius: 50%;
     	width: 220px;
-    	height: 220px;
+		height: 220px;
+		margin-top: 30px;
 	}
 
 	body {
@@ -223,7 +224,7 @@
 
 		#header p {
 			font-size: 1.25em;
-			margin: 0.75em 0 0.25em 0;
+			margin: 0.0em 0 0.25em 0;
 			opacity: 0.75;
 		}
 
@@ -392,7 +393,7 @@
 		cursor: default;
 		height: 6em;
 		left: 0;
-		line-height: 8em;
+		line-height: 9em;
 		position: absolute;
 		text-align: center;
 		width: 100%;
