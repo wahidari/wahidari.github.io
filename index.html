@@ -31,18 +31,21 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
+  <!-- <button type="button" class="btn btn-primary btn-sm btn-change-theme" id="btn-change-theme">Small button</button> -->
+  
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
     <!-- .nav-menu -->
     <nav class="nav-menu">
       <ul>
+        <li><a id="btn-change-theme"><i class="bx bx-adjust"></i> <span>Change Theme</span></a></li>
         <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about"><i class="bx bx-user"></i> <span>Profil</span></a></li>
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
@@ -58,6 +61,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
           <h1>Wahid Ari</h1>
@@ -70,7 +74,8 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-8 col-sm-12 align-self-center pt-5 mx-auto d-block">
-          <img src="assets/img/hero-bg.png" class="img-animate img-fluid" alt="">
+          <img id="hero-img" src="assets/img/hero-bg.png" class="img-animate img-fluid" alt="">
+          <img id="hero-img-dark" src="assets/img/hero-bg-dark.png" class="img-animate img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -90,7 +95,8 @@
 
         <div class="row">
           <div class="col-lg-6 col-md-8 col-sm-12 mx-auto d-block align-self-center">
-            <img src="assets/img/profile-img.png" class="img-animate-zoom img-fluid" alt="">
+            <img id="profile-img" src="assets/img/profile-img.png" class="img-animate-zoom img-fluid" alt="">
+            <img id="profile-img-dark" src="assets/img/profile-img-dark.png" class="img-animate-zoom img-fluid" alt="">
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 pt-3 content">
             <h3>Junior</h3>
@@ -283,12 +289,26 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app-design">
             <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/myresume-dark-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>My Resume Dark</h4>
+                <p>Web, Web Design</p>
+                <div class="portfolio-links">
+                  <a href="pages/myresume-dark.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox"
+                    title="My Resume Dark"><i class="bx bx-link">Detail</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app-design">
+            <div class="portfolio-wrap">
               <img src="assets/img/portfolio/mygarden2.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>My Garden</h4>
                 <p>App Design</p>
                 <div class="portfolio-links">
-                  <a href="pages/garden.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="My Garden"><i class="bx bx-link"></i></a>
+                  <a href="pages/garden.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="My Garden"><i class="bx bx-link">Detail</i></a>
                 </div>
               </div>
             </div>
@@ -554,7 +574,7 @@
       
           <div class="row">
       
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
                 <div class="icon">
                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -571,7 +591,7 @@
               </div>
             </div>
       
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
                 <div class="icon">
                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -588,7 +608,7 @@
               </div>
             </div>
       
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
                 <div class="icon">
                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -608,7 +628,7 @@
 
           <div class="row">
           
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
                 <div class="icon">
                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -623,7 +643,7 @@
               </div>
             </div>
           
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
                 <div class="icon">
                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -638,7 +658,7 @@
               </div>
             </div>
           
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-2 mb-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
                 <div class="icon">
                   <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">

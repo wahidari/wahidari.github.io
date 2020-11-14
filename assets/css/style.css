@@ -5,20 +5,63 @@
 * License: https://bootstrapmade.com/license/
 */
 
+.hide-img {
+  display: none;
+}
+/*--------------------------------------------------------------
+# Root Color
+--------------------------------------------------------------*/
+:root {
+  --green-primary: #25C685;
+  --green-dark: #27A770;
+  --white-primary: #ffffff;
+  --white-secondary: #f5f5f5;
+  --white-3: #f7f8f9;
+  --black-primary: #1F2E35;
+  --black-secondary: #45505b;
+  --black-3: #1A2930;
+
+  --bkg-color: var(--white-primary);
+  --bkg-color-secondary: var(--white-secondary);
+  --bkg-color-3: var(--white-3);
+
+  --text-color: var(--black-secondary);
+  --text-color-secondary: var(--black-secondary);
+
+  --link-color: var(--green-primary);
+  --link-color-hover: var(--green-dark);
+}
+
+body.dark-theme {
+  --bkg-color: var(--black-primary);
+  --bkg-color-secondary: var(--black-3);
+  --bkg-color-3: var(--black-3);
+
+  --text-color: var(--white-primary);
+  --text-color-secondary: var(--white-secondary);
+  
+  --link-color: var(--green-primary);
+  --link-color-hover: var(--green-dark);
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: var(--text-color);
+  background-color: var(--bkg-color);
+}
+
+p {
+  color: var(--text-color-secondary);
 }
 
 a {
-  color: #25C685;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #27A770;
+  color: var(--link-color-hover);
   text-decoration: none;
 }
 
@@ -129,8 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
+    background: var(--bkg-color);
+    border-right: 1px solid var(--bkg-color-secondary);
     left: -300px;
   }
 }
@@ -159,13 +202,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: var(--text-color-secondary);
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: var(--bkg-color-secondary);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -178,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: var(--text-color-secondary);
 }
 
 @media (min-width: 992px) {
@@ -233,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: var(--text-color-secondary);
 }
 
 .mobile-nav-toggle i:hover {
@@ -280,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: var(--text-color);
 }
 
 #hero img {
@@ -306,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p {
-  color: #45505b;
+  color: var(--text-color-secondary);
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -324,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: var(--text-color-secondary);
   line-height: 1;
   margin-right: 20px;
   transition: 0.5s;
@@ -333,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .social-links a:hover {
   color: #25C685;
-  background: #f2f3f5;
+  background: var(--bkg-color-secondary);
   border-radius: 50%;
   padding: 4px;
 }
@@ -350,9 +393,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
-  }
-  #hero:before {
-    background: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -376,7 +416,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: var(--text-color);
 }
 
 .section-title h2::before {
@@ -385,7 +425,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: var(--bkg-color-secondary);
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -411,7 +451,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #45505b;
+  color: var(--text-color);
 }
 
 .about img:hover {
@@ -477,87 +517,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-
-.skills.info {
-  width: 100%;
-  background: #fff;
-}
-
-.skills .info i {
-  font-size: 20px;
-  color: #25C685;
-  float: left;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  border-radius: .75rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.1);
-}
-
-.skills .info h4 {
-  padding: 5px 0 3px 60px;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  margin-bottom: 5px;
-  color: #45505b;
-}
-
-.skills .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
-}
-
-.skills .info .info-box {
-  margin-top: 40px;
-}
-
-.skills .info .info-box:hover i {
-  background: #25C685;
-  color: #fff;
-}
-
-.skills .progress {
-    display: flex;
-    height: 5px;
-    overflow: hidden;
-    line-height: 0;
-    font-size: .75rem;
-    background-color: #fff;
-    border-radius: 1px;
-    margin-left: 60px;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #25C685;
-}
-
-/*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
@@ -565,7 +524,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: var(--text-color-secondary);
 }
 
 .resume .resume-item {
@@ -587,12 +546,13 @@ section {
 
 .resume .resume-item h5 {
   font-size: 13px;
-  background: #f7f8f9;
+  /* background: var(--bkg-color-secondary); */
   /* padding: 5px 15px; */
   font-family: "Poppins", sans-serif;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--text-color-secondary);
 }
 
 .resume .resume-item ul {
@@ -601,6 +561,7 @@ section {
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  color: var(--text-color-secondary);
 }
 
 .resume .resume-item .custom-li ul li {
@@ -619,7 +580,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
+  background: var(--bkg-color);
   border: 2px solid #25C685;
 }
 
@@ -630,7 +591,7 @@ section {
 }
 
 .black-primary {
-  color: #45505b;
+  color: var(--text-color-secondary);
 }
 
 .resume .resume-item-custom h4 {
@@ -651,6 +612,7 @@ section {
 .resume .resume-item-custom ul li {
   padding-bottom: 4px;
 }
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -663,7 +625,7 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: var(--bkg-color);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -676,7 +638,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--text-color-secondary);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -694,7 +656,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  /* background: rgba(69, 80, 91, 0.8); */
 }
 
 .portfolio .portfolio-wrap::before {
@@ -808,6 +770,86 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills.info {
+  width: 100%;
+  background: var(--bkg-color);
+}
+
+.skills .info i {
+  font-size: 20px;
+  color: #25C685;
+  float: left;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: .75rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.3);
+}
+
+.skills .info h4 {
+  padding: 5px 0 3px 60px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--text-color-secondary);
+}
+
+.skills .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.skills .info .info-box {
+  margin-top: 40px;
+}
+
+.skills .info .info-box:hover i {
+  background: #25C685;
+  color: #fff;
+}
+
+.skills .progress {
+    display: flex;
+    height: 5px;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #fff;
+    border-radius: 1px;
+    margin-left: 60px;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #45505b;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: #25C685;
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services {
@@ -818,7 +860,7 @@ section {
   text-align: center;
   padding: 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: var(--bkg-color);
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 
@@ -847,7 +889,7 @@ section {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: var(--bkg-color-secondary);
 }
 
 .services .icon-box h4 {
@@ -857,7 +899,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: var(--text-color);
   transition: ease-in-out 0.3s;
 }
 
@@ -1027,7 +1069,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: var(--bkg-color);
 }
 
 .contact .info i {
@@ -1041,7 +1083,8 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.1);
+  background: var(--bkg-color-3);
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.3);
 }
 
 .contact .info h4 {
@@ -1049,14 +1092,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: var(--text-color);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: var(--text-color-secondary);
 }
 
 .contact .info .email, .contact .info .phone {
@@ -1070,7 +1113,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: var(--bkg-color);
 }
 
 .contact .php-email-form .form-group {
@@ -1079,7 +1122,7 @@ section {
 
 .contact .php-email-form .validate {
   display: none;
-  color: red;
+  color: #ed3c0d;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1135,10 +1178,25 @@ section {
 
 .contact .php-email-form input {
   height: 44px;
+  color: var(--text-color-secondary);
+  background: var(--bkg-color-3);
+}
+
+
+.contact .php-email-form input::placeholder {
+  color: var(--text-color-secondary);
+  opacity: 1; /* Firefox */
 }
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
+  color: var(--text-color-secondary);
+  background: var(--bkg-color-3);
+}
+
+.contact .php-email-form textarea::placeholder {
+  color: var(--text-color-secondary);
+  opacity: 1; /* Firefox */
 }
 
 .contact .php-email-form button[type="submit"] {
@@ -1173,10 +1231,72 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: var(--bkg-color-3);
+  color: var(--text-color-secondary);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #25C685;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 8px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #27A770;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+/*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
   padding: 40px 0;
+  color: var(--text-color);
+  background: var(--bkg-color);
 }
 
 .portfolio-details .portfolio-title {
@@ -1232,64 +1352,4 @@ section {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
   }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  background: #f7f8f9;
-  color: #45505b;
-  font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
-}
-
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-#footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #25C685;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 8px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #27A770;
-  color: #fff;
-  text-decoration: none;
-}
-
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
-
-#footer .credits {
-  font-size: 13px;
 }

@@ -7,6 +7,19 @@
 !(function($) {
   "use strict";
 
+  $(document).ready(function() {
+    $("#hero-img-dark").toggle();
+    $("#profile-img-dark").toggle();
+  });
+  
+  $("#btn-change-theme").click(function () {
+    document.body.classList.toggle("dark-theme");
+    $("#hero-img-dark").toggle();
+    $("#hero-img").toggle();
+    $("#profile-img-dark").toggle();
+    $("#profile-img").toggle();
+  });
+
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
