@@ -7,11 +7,13 @@
 !(function($) {
   "use strict";
 
+  // Toggle dark image in light theme
   $(document).ready(function() {
     $("#hero-img-dark").toggle();
     $("#profile-img-dark").toggle();
   });
   
+  // Change to dark theme or light theme
   $("#btn-change-theme").click(function () {
     document.body.classList.toggle("dark-theme");
     $("#hero-img-dark").toggle();
