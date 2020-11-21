@@ -99,6 +99,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.2s ease-in-out;
 }
 
+@media (max-width: 500px){
+  .back-to-top {
+    bottom: 60px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1278,6 +1284,14 @@ section {
   height: 36px;
   transition: 0.3s;
 }
+
+/* @media (max-width: 500px) {
+  #footer .social-links a {
+    color: #45505b;
+    background: none;
+    border: 1px solid;
+  }
+} */
 
 #footer .social-links a:hover {
   background: #27A770;
