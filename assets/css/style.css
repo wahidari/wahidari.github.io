@@ -831,7 +831,7 @@ section {
     overflow: hidden;
     line-height: 0;
     font-size: .75rem;
-    background-color: #fff;
+    background-color: var(--bkg-color);
     border-radius: 1px;
     margin-left: 60px;
 }
