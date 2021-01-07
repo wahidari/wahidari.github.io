@@ -4,6 +4,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+html {
+  scroll-behavior: smooth;
+}
 
 .hide-img {
   display: none;
