@@ -1314,7 +1314,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding: 40px 0;
+  padding: 20px 0;
   color: var(--text-color);
   background: var(--bkg-color);
 }
