@@ -131,7 +131,7 @@ h6 {
 
 @media (max-width: 500px) {
     .back-to-top {
-        bottom: 60px;
+        bottom: 15px;
     }
 }
 
@@ -271,6 +271,7 @@ h6 {
 }
 
 .navbar-toggler {
+    font-size: 1.5rem;
     color: var(--nav-item-color) !important;
 }
 
@@ -426,11 +427,18 @@ h6 {
     height: 100vh;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #hero {
+    height: auto;
+}
+}
 /* @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
   }
 } */
+
 .link-cv {
     font-size: 14px;
     font-family: "Poppins", sans-serif;

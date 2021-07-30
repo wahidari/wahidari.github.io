@@ -5,7 +5,7 @@
  * License: https://bootstrapmade.com/license/
  */
 !(function ($) {
-    "use strict";
+    ("use strict");
 
     // Toggle dark image in light theme
     $(document).ready(function () {
@@ -23,8 +23,7 @@
             $("#btn-change-theme").removeClass("bx-moon");
             $("#btn-change-theme").addClass("bx-sun");
         }
-            
-        
+
         $("#hero-img-dark").toggle();
         $("#hero-img").toggle();
         $("#profile-img-dark").toggle();
@@ -63,6 +62,20 @@
             $(".navbar div").removeClass("show");
         });
     });
+
+    // Close Navbar when clicked outside
+    $(window).on("click", function (event) {
+        // element over which click was made
+        var clickOver = $(event.target);
+        if (
+            $(".navbar .navbar-toggler").attr("aria-expanded") == "true" &&
+            clickOver.closest(".navbar").length === 0
+        ) {
+            // Click on navbar toggler button
+            $('button[aria-expanded="true"]').click();
+        }
+    });
+    
     // Smooth scroll for the navigation menu and links with .scrollto classes
     $(document).on("click", ".navbar a, .scrollto", function (e) {
         if (
