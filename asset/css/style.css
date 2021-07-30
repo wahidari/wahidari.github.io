@@ -24,8 +24,8 @@ html {
     --black-primary: #1f2e35;
     --black-secondary: #45505b;
     --black-3: #1a2930;
-    --shadow-color-1: rgba(0,0,0,.095);
-    --shadow-color-2: rgba(0,0,0, 0.1);
+    --shadow-color-1: rgba(0, 0, 0, 0.095);
+    --shadow-color-2: rgba(0, 0, 0, 0.1);
 
     --bkg-color: var(--white-primary);
     --bkg-color-secondary: var(--white-secondary);
@@ -60,7 +60,6 @@ body.dark-theme {
     --shadow-color: var(--shadow-color-2);
 }
 
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -93,7 +92,7 @@ h6 {
 }
 
 .text-p {
-  color: var(--text-color-p);
+    color: var(--text-color-p);
 }
 
 .text-purple {
@@ -218,7 +217,7 @@ h6 {
 # Navbar
 --------------------------------------------------------------*/
 .shadow-custom {
-  box-shadow: 0 .125rem .25rem var(--shadow-color) !important;;
+    box-shadow: 0 0.125rem 0.25rem var(--shadow-color) !important;
 }
 
 .btn-theme {
@@ -428,10 +427,10 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  #hero {
-    height: auto;
-}
+    /* For mobile phones: */
+    #hero {
+        height: auto;
+    }
 }
 /* @media (min-width: 992px) {
   #hero {
@@ -520,6 +519,9 @@ h6 {
 @media (max-width: 992px) {
     #hero {
         text-align: center;
+    }
+    #hero img{
+        max-height: 500px;
     }
     #hero h1 {
         font-size: 32px;
