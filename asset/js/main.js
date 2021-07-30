@@ -34,7 +34,7 @@
     $(window).on("load", function () {
         if ($("#preloader").length) {
             $("#preloader")
-                .delay(10)
+                .delay(5)
                 .fadeOut("slow", function () {
                     $(this).remove();
                 });
