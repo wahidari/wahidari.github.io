@@ -780,9 +780,14 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li:hover {
+    color: #25c685;
+}
+
 .portfolio #portfolio-flters li.filter-active {
     color: #25c685;
+    border-radius: 16px !important;
+    border: 2px solid #25c685;
 }
 
 .portfolio #portfolio-flters li:last-child {
