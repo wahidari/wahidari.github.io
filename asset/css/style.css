@@ -656,6 +656,14 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+@media only screen and (max-width: 975px) {
+    /* For mobile phones: */
+    .mt-5-sm {
+        margin-top: 2.5rem!important;
+    }
+}
+
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
