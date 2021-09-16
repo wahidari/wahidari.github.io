@@ -739,6 +739,10 @@ section {
     color: var(--text-color-secondary);
 }
 
+.p-15 {
+    font-size: 15px;
+}
+
 .resume .resume-item-custom h4 {
     line-height: 18px;
     font-size: 18px;
